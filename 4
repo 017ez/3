@@ -1,0 +1,68 @@
+getgenv().Settings = {
+    Main = {
+        Enable = false,
+        
+        HoldKey = false,
+        ToggleKey = true,
+        
+        UseKeyBoardKey = true,
+        KeyBoardKey = Enum.KeyCode.C,
+        
+        UseMouseKey = false,
+        MouseKey = Enum.UserInputType.MouseButton2,
+        
+        ThirdPerson = true,
+        FirstPerson = true,
+        
+        AutoPingSets = true,
+        
+        UseCircleRadius = false,
+        DisableOutSideCircle = false,
+        
+        UseShake = true,
+        ShakePower = 20,
+        
+        CheckForWalls = false
+    },
+    Check = {
+        CheckIfKo = true,
+        DisableOnTargetDeath = true,
+        DisableOnPlayerDeath = true
+    },
+    Horizontal = {
+        PredictMovement = true,
+        PredictionVelocity = 0.14632
+    },
+    Smooth = {
+        Smoothness = true,
+        SmoothnessAmount = 0.025,
+        SmoothMethod = Enum.EasingStyle.Circular,
+        SmoothMethodV2 = Enum.EasingDirection.InOut
+    },
+    Part = {
+        AimPart = "UpperTorso",
+        CheckIfJumpedAimPart = "Head",
+        CheckIfJumped = true,
+        GetClosestPart = true
+    },
+    Resolver = {
+        UnderGround = false,
+        UseUnderGroundKeybind = false,
+        UnderGroundKey = Enum.KeyCode.X,
+        DetectDesync = true,
+        Detection = 75,
+        
+        UseDetectDesyncKeybind = false,
+        DetectDesyncKey = Enum.KeyCode.V,
+        SendNotification = false
+    },
+    Visual = {
+        Fov = false,
+        FovTransparency = 1,
+        FovThickness = 1,
+        FovColor = Color3.fromRGB(255, 120, 255),
+        FovRadius = 200
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tailgater/Fatality/main/Streamable", true))()
